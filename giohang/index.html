@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="giohang">
+        <a onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($B)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+
+        </table>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1>SHOP GIÀY ĐÁ BÓNG</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+                <a href="/TRANGDANGKY.HTML"><button class="btn" >ĐĂNG KÝ </button></a>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row">
+                <div class="banner mb">
+                    <img src="./images/banner.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/1.jpg" alt=""></div>
+                    <p>$<span>10</span>B</p>
+                    <a href="#">Adidas Copa 19.1 TF</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/2.jpg" alt=""></div>
+                    <p>$<span>20</span>B</p>
+                    <a href="#">Adidas X19.1 TF xanh nhạt trắng</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="./images/3.jpg" alt=""></div>
+                    <p>$<span>30</span>B</p>
+                    <a href="#">Adidas Nemeziz Tango 18.3 TF DA9622 - Cam đậm</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/4.jpg" alt=""></div>
+                    <p>$<span>40</span>B</p>
+                    <a href="#">Adidas ACE </a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/5.jpg" alt=""></div>
+                    <p>$<span>50</span>B</p>
+                    <a href="#">Nike Mercurial Vapor 13 Pro TF Blue Hero/Obsidian/White</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="./images/6.jpg" alt=""></div>
+                    <p>$<span>60</span>B</p>
+                    <a href="#">Adidas Predator cổ cao 20.3 TF</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/7.jpg" alt=""></div>
+                    <p>$<span>70</span>B</p>
+                    <a href="#">NIKE MERCURIAL CỔ THƯỜNG</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/8.jpg" alt=""></div>
+                    <p>$<span>80</span>B</p>
+                    <a href="#">Nike MERCURIAL TF </a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="./images/9.jpg" alt=""></div>
+                    <p>$<span>90</span>B</p>
+                    <a href="#">NIKE MERCURIAL SUPERFLY 7 MÀU XÁM</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
